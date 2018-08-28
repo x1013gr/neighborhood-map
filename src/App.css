@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+@charset "utf-8";
+
+/* In css, I used flex boxes, width set to 100% so that the page would be responsive */
+
+body, td, th {
+  margin: 0px;
+  padding: 0px;
+  content: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  color: #777;
+}
+
+body {
+  background-color: #85E3FF;
+  margin: 0px;
+  position: relative;
+}
+
+#container {
+  background-color: #85E3FF;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+#container #map-container {
+  height: 400px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+#container-second > #map-container, #container-second > #map-container > #map {
+  height: calc(90vh - 30px);
+}
+
+
+h1 {
+  text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #85E3FF;
+
+}
+
+li {
+  margin: 21px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+}
+
+li:hover {
+  background-color: #e3bef7;
+  cursor: pointer;
+}
+
+input{
+  margin-bottom: 36px;
+  width: 100%;
+  height: 40px;
+}
+
+.first, .second {
+  position: relative;
+  width: 90%;
+}
+
+
+#list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: #FFF;
+  height: 30%;
+  position: relative;
+}
+
+#container-second {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* the lovely breakpoints */
+@media only screen and (min-width:700px)  {
+  #container-second > #map-container, #container-second > #map-container > #map {
+    height: 100vh;
+  }
+
+  #container-second > #list-container {
+    width: 38%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width:700px)  {
+  #container-second {
+    flex-direction: row-reverse;
+    height: 30%;
+  }
+
+
+}
+
+@media only screen and (max-width:700px) {
+  #container-second > #map-container, #container-second > #map-container > #map {
+    height: 62vh;
+  }
+  #container-second > #list-container {
+   
+    height: 38vh;
+  }
+
+  ul {
+      overflow: hidden;
+      background-color: #ffb6c1;
+  }
+  li {
+    display: inline-block;
+    float: left;
+    margin: 10px;
+    height: 20px;
+    text-align: center;
+    font-size: 15px;
+
+  }
+
+  #list-container {
+    background: black;
+
+  }
+  
+  body, td, th {
+    font-size: 8pt;
+  }
+
+  .first {
+  height: 70%;
+  width: 90%;
+ }
+}
+

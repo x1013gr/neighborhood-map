@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Pyrgaki",
+    "location": {
+      "lat": 36.975249,
+      "lng": 25.401781
+    }
+  },
+  {
+    "title": "Kastraki",
+    "location": {
+      "lat": 37.004317,
+      "lng": 25.385130
+    }
+  },
+  {
+    "title": "Agia Anna",
+    "location": {
+      "lat": 37.069042,
+      "lng": 25.354732
+    }
+  },
+  {
+    "title": "Mikri Vigla",
+    "location": {
+      "lat": 37.027140,
+      "lng": 25.370021
+    }
+  },
+  {
+    "title": "Agios Prokopios",
+    "location": {
+      "lat": 37.075028,
+      "lng": 25.351664
+    }
+  }
+]
